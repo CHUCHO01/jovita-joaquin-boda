@@ -629,6 +629,14 @@ section h2 {
   margin: 0; line-height: 1.5;
 }
 .timeline-item--highlight .timeline-content h3 { color: var(--sky-deep); font-weight: 700; }
+.timeline-extra {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-style: italic;
+  color: var(--gold) !important;
+  margin-top: 0.35rem !important;
+  letter-spacing: 0.02em;
+}
 
 /* Alternate sides */
 .timeline-item:nth-child(even) { flex-direction: row-reverse; }
