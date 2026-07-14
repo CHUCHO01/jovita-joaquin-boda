@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nos Casamos — Jovita & Joaquin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- SCROLL PROGRESS -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <div class="navbar-logo">J <span class="amp">&</span> J</div>
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" href="#portada">Inicio</a></li>
+          <li><a class="nav-link" href="#contador">Contador</a></li>
+          <li><a class="nav-link" href="#itinerario">Itinerario</a></li>
+          <li><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+          <li><a class="nav-link" href="#fotos">Fotos</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="portada">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">14 · XI · 2026</p>
+        <div class="ornament">❧</div>
+        <h1 class="couple-names">
+          <span class="name">Jovita</span>
+          <span class="amp-large">&</span>
+          <span class="name">Joaquin</span>
+        </h1>
+        <p class="romantic-phrase">Dos corazones, una sola historia</p>
+        <div class="ornament-line">
+          <span></span><span class="dot">✦</span><span></span>
+        </div>
+        <button
+          class="scroll-btn"
+          onclick="
+            document
+              .getElementById('itinerario')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          Descubrir los detalles
+        </button>
+      </div>
+      <div class="hero-scroll-hint">
+        <span>↓</span>
+      </div>
+    </section>
+
+    <!-- CONTADOR -->
+    <section class="countdown" id="contador">
+      <div class="container">
+        <p class="section-label">El Gran Día</p>
+        <h2>¿Cuánto falta?</h2>
+        <div class="countdown-timer">
+          <div class="countdown-item">
+            <div class="countdown-number" id="days">0</div>
+            <div class="countdown-label">Días</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="hours">0</div>
+            <div class="countdown-label">Horas</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="minutes">0</div>
+            <div class="countdown-label">Minutos</div>
+          </div>
+          <div class="countdown-sep">:</div>
+          <div class="countdown-item">
+            <div class="countdown-number" id="seconds">0</div>
+            <div class="countdown-label">Segundos</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ITINERARIO -->
+    <section class="itinerario" id="itinerario">
+      <div class="container">
+        <p class="section-label">El programa del día</p>
+        <h2>Itinerario</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">14:00</div>
+            <div class="timeline-dot">
+              <span>💒</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Ceremonia Religiosa</h3>
+              <p>Capilla de la Virgen de la Inmaculada Concepción</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">15:30</div>
+            <div class="timeline-dot">
+              <span>⚖️</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Ceremonia Civil</h3>
+              <p>Casa de los Novios</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">16:00</div>
+            <div class="timeline-dot">
+              <span>🍽️</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Banquete</h3>
+              <p>Celebración y convivencia con familiares y amigos</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-item--highlight">
+            <div class="timeline-time">19:00</div>
+            <div class="timeline-dot">
+              <span>🌿</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Boda Indígena Tradicional</h3>
+              <p>Ceremonia tradicional llena de raíces y significado</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">21:00</div>
+            <div class="timeline-dot">
+              <span>👨‍👩‍👧‍👦</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Vals Familiar</h3>
+              <p>Un momento especial con la familia</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">21:30</div>
+            <div class="timeline-dot">
+              <span>🥂</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Brindis</h3>
+              <p>Brindamos juntos por los novios y su nueva vida</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">22:00</div>
+            <div class="timeline-dot">
+              <span>🎶</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Apertura de Pista de Baile</h3>
+              <p>¡A bailar! La noche apenas comienza</p>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-item--highlight">
+            <div class="timeline-time">✨</div>
+            <div class="timeline-dot">
+              <span>🎆</span>
+            </div>
+            <div class="timeline-content">
+              <h3>Quema de Toritos Pirotécnicos</h3>
+              <p>
+                ¡El espectáculo más esperado! Dos toritos de fuego para cerrar
+                la noche con todo
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="location" id="ubicacion">
+      <div class="container">
+        <p class="section-label">Cómo llegar</p>
+        <h2>Ubicación</h2>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3725.0305369281664!2d-98.048091!3d20.991412999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDU5JzI5LjEiTiA5OMKwMDInNTMuMSJX!5e0!3m2!1ses-419!2smx!4v1774153228617!5m2!1ses-419!2smx"
+            width="100%"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div class="location-cards">
+          <div class="location-card">
+            <span class="loc-icon">💒</span>
+            <div>
+              <h3>Capilla Inmaculada Concepción</h3>
+              <p>Ceremonia Religiosa · 14:00 hrs</p>
+              <a
+                href="https://maps.app.goo.gl/ALzUbGjQQdRToBgy7?g_st=aw"
+                target="_blank"
+                class="loc-link"
+                >Ver en Maps →</a
+              >
+            </div>
+          </div>
+          <div class="location-card">
+            <span class="loc-icon">🏡</span>
+            <div>
+              <h3>Casa de los Novios</h3>
+              <p>Ceremonia Civil & Recepción · 15:30 hrs</p>
+              <a
+                href="https://maps.app.goo.gl/9ThU6Cj9k7XSV52t8?g_st=aw"
+                target="_blank"
+                class="loc-link"
+                >Ver en Maps →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA / SUBIR FOTOS -->
+    <section class="fotos" id="fotos">
+      <div class="container">
+        <p class="section-label">Recuerdos del día</p>
+        <h2>Comparte tus Fotos</h2>
+        <p class="fotos-desc">
+          ¡Captura cada momento especial y compártelo con nosotros! Sube tus
+          fotos del evento y construyamos juntos el álbum de nuestra boda.
+        </p>
+
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="fileInput" accept="image/*" multiple hidden />
+          <div class="upload-icon">📷</div>
+          <p class="upload-title">Arrastra tus fotos aquí</p>
+          <p class="upload-sub">
+            o haz clic para seleccionarlas desde tu dispositivo
+          </p>
+          <button
+            class="btn upload-btn"
+            onclick="document.getElementById('fileInput').click()"
+          >
+            Seleccionar Fotos
+          </button>
+          <p class="upload-hint">
+            Formatos: JPG, PNG, WEBP · Máximo 10 MB por foto
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-monogram">J <span class="amp">&</span> J</div>
+        <p class="footer-msg">¡Gracias por acompañarnos en nuestro gran día!</p>
+        <p class="footer-date">14 de Noviembre de 2026</p>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">
+          © 2026 Jovita & Joaquin · Todos los derechos reservados
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
