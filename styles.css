@@ -692,15 +692,33 @@ section h2 {
   .btn, .scroll-btn { width: 100%; text-align: center; }
 
   /* Timeline mobile */
-  .timeline::before { left: 28px; }
+  .timeline::before { left: 24px; }
   .timeline-item,
-  .timeline-item:nth-child(even) { flex-direction: row; align-items: flex-start; }
+  .timeline-item:nth-child(even) {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-areas:
+      "dot  time"
+      "dot  content";
+    align-items: start;
+    column-gap: 1.2rem;
+  }
+  .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    grid-area: dot;
+    flex: none; width: 48px; height: 48px; font-size: 1.1rem;
+  }
   .timeline-time,
-  .timeline-item:nth-child(even) .timeline-time { display: none; }
-  .timeline-dot { flex: 0 0 48px; width: 48px; height: 48px; font-size: 1.1rem; }
+  .timeline-item:nth-child(even) .timeline-time {
+    grid-area: time;
+    display: block;
+    text-align: left;
+    padding: 0.3rem 0 0.2rem;
+  }
   .timeline-content,
   .timeline-item:nth-child(even) .timeline-content {
-    text-align: left; padding-left: 1.2rem; padding-right: 0;
+    grid-area: content;
+    text-align: left; padding-left: 0; padding-right: 0;
   }
 }
 
